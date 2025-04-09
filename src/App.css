@@ -1,0 +1,136 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+/* nav{
+  background-color:red;
+  height: 65px;
+  width: 100%;
+
+}
+p
+{
+  font-size:large;
+
+}
+.searchbox
+{
+  position: relative;
+  left: 300px;
+  top: -35px;
+  width: 500px;
+  height: 30px;
+  border: 0px;
+  border-radius: 15px;
+  padding-left: 35px;
+}
+ .search
+{
+  color: black;
+  
+} 
+.searchicon
+{
+  position: relative;
+  left: -195px;
+  top: -33px;
+}
+.login
+{
+  position: relative;
+  left: 1000px;
+  top: -60px; 
+  color: white;
+  float: end;
+}
+
+i{
+  color: white;
+  padding: 5px;
+} */
+/* a{
+  text-decoration: none;
+  color: rgb(22, 21, 21);
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+}  */
+
+
+
+ /* <nav className="navbar row">
+        <div className="col-12 col-md-3">
+          <div className="navbar-brand">
+            <Link to="/">
+              <img width="150px" alt='JVLcart Logo' src="/images/logo.png" />
+            </Link>
+            </div>
+        </div>
+  
+        <div className="col-12 col-md-6 mt-2 mt-md-0">
+           <Search/>
+        </div>
+  
+        <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
+          { isAuthenticated ? 
+            (
+              <Dropdown className='d-inline' >
+                  <Dropdown.Toggle variant='default text-white pr-5' id='dropdown-basic'>
+                    <figure className='avatar avatar-nav'>
+                      <Image width="50px" src={user.avatar??'./images/default_avatar.png'}  />
+                    </figure>
+                    <span>{user.name}</span>
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                      { user.role === 'admin' && <Dropdown.Item onClick={() => {navigate('admin/dashboard')}} className='text-dark'>Dashboard</Dropdown.Item> }
+                      <Dropdown.Item onClick={() => {navigate('/myprofile')}} className='text-dark'>Profile</Dropdown.Item>
+                      <Dropdown.Item onClick={() => {navigate('/orders')}} className='text-dark'>Orders</Dropdown.Item>
+                      <Dropdown.Item onClick={logoutHandler} className='text-danger'>Logout</Dropdown.Item>
+                  </Dropdown.Menu>
+              </Dropdown>
+            )
+          
+          :
+            <Link to="/login"  className="btn" id="login_btn">Login</Link>
+          }
+          <Link to="/cart"><span id="cart" className="ml-3">Cart</span></Link>
+          <span className="ml-1" id="cart_count">{cartItems.length}</span>
+        </div>
+    </nav> */
