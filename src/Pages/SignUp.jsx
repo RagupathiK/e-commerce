@@ -10,7 +10,7 @@ export default function SignUp() {
 
     const handlesubmit =(e) => {
         e.preventDefault()
-        axios.post('https://backend-two-pi-76.vercel.app/user/post', {name,username,email,password})
+        axios.post('https://backend-7iwt.onrender.com/user/post', {name,username,email,password})
         .then(result => console.log(result))
         .catch(err => console.log(err))
         alert("Registered data")

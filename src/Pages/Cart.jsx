@@ -45,7 +45,7 @@ export default function Cart({ cartitems, setcartitems }) {
     }
 
     function placeorderhandler() {
-        axios.post('https://backend-two-pi-76.vercel.app/api/v1/order', cartitems)
+        axios.post('https://backend-7iwt.onrender.com/api/v1/order', cartitems)
             .then(() => {
                 setcartitems([]);
                 setcomplete(true)

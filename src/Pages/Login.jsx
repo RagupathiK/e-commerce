@@ -8,7 +8,7 @@ export default function Login() {
   const [data, setData] = useState([])
 
   const login = () => {
-    axios.get('https://backend-two-pi-76.vercel.app/user/get')
+    axios.get('https://backend-7iwt.onrender.com/user/get')
       .then((res) => {
         setData(res.data)
       })
