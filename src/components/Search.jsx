@@ -13,7 +13,7 @@ export default function Search() {
         <div>
             <div className="input-group ">
                 <input type="text" onChange={(e) => setkeyword(e.target.value)} onBlur={searhHandler} className="form-control rounded rounded-start-5" placeholder="Search Products & Brands" aria-label="Username" aria-describedby="basic-addon1" />
-                <button onClick={searhHandler} className="input-group-text rounded rounded-end-5" id="basic-addon1"><i className='search' class="fa fa-search" aria-hidden="true"></i></button>
+                <button onClick={searhHandler} className="input-group-text rounded rounded-end-5"><i className='search' class="fa fa-search" aria-hidden="true"></i></button>
             </div>
         </div>
     )

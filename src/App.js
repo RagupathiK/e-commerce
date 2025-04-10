@@ -2,7 +2,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './Pages/Home';
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import { Routes,Route } from 'react-router-dom';
 import ProductDetail from './Pages/ProductDetail';
 import { useState } from 'react';
 import {ToastContainer} from 'react-toastify'
@@ -20,7 +20,6 @@ function App() {
     <div className="App">
       <ToastContainer theme='dark' position='top-center'/>
       <Header cartitems={cartitems}/>
-      {/* <Router> */}
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/search' element={<Home/>}/>
@@ -30,7 +29,6 @@ function App() {
           <Route path='/cart' element={<Cart cartitems={cartitems} setcartitems={setcartitems}/>}/>
           
         </Routes>
-      {/* </Router> */}
       
       <Footer/>
     </div>

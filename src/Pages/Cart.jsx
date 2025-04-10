@@ -32,17 +32,20 @@ export default function Cart({ cartitems, setcartitems }) {
     }
 
     function removeitems(item) {
-        const updateditems = cartitems.filter((i) => {
-            if (i.product._id !== item.product._id) {
-                return true;
-            }
-        })
+        const updateditems = cartitems.filter((i) =>
+            <div>
+
+                if (i.product._id !== item.product._id) {
+                    true
+                }
+            </div>
+        )
         setcartitems(updateditems)
 
     }
 
     function placeorderhandler() {
-        axios.post('http://localhost:4000/api/v1/order',cartitems)
+        axios.post('http://localhost:4000/api/v1/order', cartitems)
             .then(() => {
                 setcartitems([]);
                 setcomplete(true)
@@ -98,7 +101,7 @@ export default function Cart({ cartitems, setcartitems }) {
                                 <h4>Order Summary</h4>
                                 <hr />
                                 <p>Subtotal: <span className='order-summary-values'>{cartitems.reduce((acc, item) => (acc + item.qty), 0)} (units)</span></p>
-                                <p>Est. total <span className='order-summary-values'>₹ {cartitems.reduce((acc, item) => (acc + parseInt(item.product.price)* item.qty), 0)}</span></p>
+                                <p>Est. total <span className='order-summary-values'>₹ {cartitems.reduce((acc, item) => (acc + parseInt(item.product.price) * item.qty), 0)}</span></p>
                                 <hr />
                                 <button id='checkout_btn' onClick={placeorderhandler} className='btn btn-warning btn-block rounded rounded-pill w-100'>Place Order</button>
                             </div>
@@ -109,6 +112,6 @@ export default function Cart({ cartitems, setcartitems }) {
             </Fragment> : (!complete ? <center><h2 className='p-5'>Your Cart is Empty!</h2></center>
                 : <Fragment><center><h2 className='p-5'>Order Complete</h2></center>
                     <p>Your order as been placed sucessfully.</p>
-                  </Fragment>)
+                </Fragment>)
     )
 }

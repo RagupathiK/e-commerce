@@ -34,16 +34,16 @@ export default function Header({cartitems}) {
       </nav>
       <div className='p-3 bg-white pt-2 justify-content-evenly'>
         <div className='row d-inline col-sm-12 col-md-6 col-lg-3' >
-          <a className='text-decoration-none text-black' href="#"><img src="/images/mobile.png" alt="img" width={'25px'} height={'25px'} />Mobiles</a>
-          <a className='text-decoration-none text-black' href="#"><img src="/images/Air conditioner.png" alt="img" width={'25px'} height={'25px'} />Air Conditioners</a>
-          <a className='text-decoration-none text-black' href="#"><img src="/images/Frezzer.png" alt="img" width={'25px'} height={'25px'} />Refrigerators</a>
-          <a className='text-decoration-none text-black' href="#"><img src="/images/smart watch.png" alt="img" width={'25px'} height={'25px'} />Televisions </a>
-          <a className='text-decoration-none text-black' href="#"><img src="/images/Laptop.png" alt="img" width={'25px'} height={'25px'} />Laptop</a>
-          <a className='text-decoration-none text-black' href="#"><img src="/images/Earphones.png" alt="img" width={'25px'} height={'25px'} />Earphones</a>
-          <a className='text-decoration-none text-black' href="#"><img src="/images/smart watch.png" alt="img" width={'25px'} height={'25px'} />Smart Watches</a>
-          <a className='text-decoration-none text-black' href="#"><img src="/images/Tablets.png" alt="img" width={'25px'} height={'25px'} />Tablets</a>
-          <a className='text-decoration-none text-black' href="#"><img src="/images/Washing machine.png" alt="img" width={'25px'} height={'25px'} />Washing Machines</a>
-          <a className='text-decoration-none text-black' href="#"><img src="/images/Total items.png" alt="img" width={'25px'} height={'25px'} />All Categories</a>
+          <a className='text-decoration-none text-black' href="a"><img src="/images/mobile.png" alt="img" width={'25px'} height={'25px'} />Mobiles</a>
+          <a className='text-decoration-none text-black' href="b"><img src="/images/Air conditioner.png" alt="img" width={'25px'} height={'25px'} />Air Conditioners</a>
+          <a className='text-decoration-none text-black' href="c"><img src="/images/Frezzer.png" alt="img" width={'25px'} height={'25px'} />Refrigerators</a>
+          <a className='text-decoration-none text-black' href="d"><img src="/images/smart watch.png" alt="img" width={'25px'} height={'25px'} />Televisions </a>
+          <a className='text-decoration-none text-black' href="e"><img src="/images/Laptop.png" alt="img" width={'25px'} height={'25px'} />Laptop</a>
+          <a className='text-decoration-none text-black' href="f"><img src="/images/Earphones.png" alt="img" width={'25px'} height={'25px'} />Earphones</a>
+          <a className='text-decoration-none text-black' href="g"><img src="/images/smart watch.png" alt="img" width={'25px'} height={'25px'} />Smart Watches</a>
+          <a className='text-decoration-none text-black' href="h"><img src="/images/Tablets.png" alt="img" width={'25px'} height={'25px'} />Tablets</a>
+          <a className='text-decoration-none text-black' href="i"><img src="/images/Washing machine.png" alt="img" width={'25px'} height={'25px'} />Washing Machines</a>
+          <a className='text-decoration-none text-black' href="j"><img src="/images/Total items.png" alt="img" width={'25px'} height={'25px'} />All Categories</a>
         </div>
       </div>
     </div>

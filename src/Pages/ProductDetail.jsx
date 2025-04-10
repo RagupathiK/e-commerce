@@ -14,10 +14,10 @@ export default function ProductDetail({ cartitems, setcartitems }) {
             .then(res => {
                 setproduct(res.data.product);
             })
-    }, [])
+    }, [id])
 
     function addtocart() {
-        const itemexist = cartitems.find((item) => item.product._id == product._id)
+        const itemexist = cartitems.find((item) => item.product._id === product._id)
         if (!itemexist) {
             const newitem = { product, qty };
             setcartitems((state) => [...state, newitem]);
@@ -26,7 +26,7 @@ export default function ProductDetail({ cartitems, setcartitems }) {
     }
 
     function Increaseqty() {
-        if (product.stock == qty) {
+        if (product.stock === qty) {
             return;
         }
         setqty((state) => state + 1)
@@ -63,7 +63,7 @@ export default function ProductDetail({ cartitems, setcartitems }) {
 
                         </div>
                         <br />
-                        <button type="button" onClick={addtocart} disabled={product.stock == 0} id="cart_btn" class="btn btn-primary d-inline ml-4">Add to Cart</button>
+                        <button type="button" onClick={addtocart} disabled={product.stock === 0} id="cart_btn" class="btn btn-primary d-inline ml-4">Add to Cart</button>
                         <br /><br />
                         <p>Status: <span id="stock_status" className={product.stock > 0 ? 'text-success' : 'text-danger'}>{product.stock > 0 ? 'In Stock' : 'Out Of Stock'}</span></p>
 

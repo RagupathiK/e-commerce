@@ -17,8 +17,9 @@ export default function Home() {
       axios.get('http://localhost:4000/api/v1/products?'+searchparams)
       .then(res=> {
         setProducts(res.data.products);
+        setsearchparams(res.data)
       })
-  },[searchparams])
+  },[setsearchparams,searchparams])
   
   return (  
     <div className='bg-white'>

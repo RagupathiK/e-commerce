@@ -62,14 +62,14 @@ export default function Footer() {
             <div className='d-flex px-md-5'>
               <img src="/images/Sub Menu.png" alt="img" width={'50px'} />
               <p className='pt-3 px-3'>Experience Reliance digital app on mobile</p>
-              <a className='pt-3' href="#"><img src="/images/googleplay.png" alt="img" width={'100px'} /></a>
-              <a className='pt-3 px-3' href="#"><img src="/images/Appstore.png" alt="img" width={'100px'} /></a>
+              <a className='pt-3' href="k"><img src="/images/googleplay.png" alt="img" width={'100px'} /></a>
+              <a className='pt-3 px-3' href="l"><img src="/images/Appstore.png" alt="img" width={'100px'} /></a>
             </div>
             <div className='px-xl-5 text-center col-sm-12 col-md-6 col-lg-3'>
               <h5>Follow us</h5>
-              <a className='px-2' href="#"><img src="/images/facebook.png" alt="img" width={'35px'} /></a>
-              <a className='px-0' href="#"><img src="/images/twitter.png" alt="img" width={'35px'} /></a>
-              <a className='px-2' href="#"><img src="/images/youtube.png" alt="img" width={'35px'} /></a>
+              <a className='px-2' href="m"><img src="/images/facebook.png" alt="img" width={'35px'} /></a>
+              <a className='px-0' href="n"><img src="/images/twitter.png" alt="img" width={'35px'} /></a>
+              <a className='px-2' href="o"><img src="/images/youtube.png" alt="img" width={'35px'} /></a>
             </div>
           </div>
         </div>
