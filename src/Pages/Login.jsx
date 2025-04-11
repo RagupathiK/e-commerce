@@ -8,7 +8,7 @@ export default function Login() {
   const [data, setData] = useState([])
 
   const login = () => {
-    axios.get('https://backend-7iwt.onrender.com/user/get')
+    axios.get('http://localhost:4000/user/get')
       .then((res) => {
         setData(res.data)
       })

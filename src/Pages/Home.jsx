@@ -14,7 +14,8 @@ export default function Home() {
       // fetch(process.env.REACT_APP_API_URL+'/products?' + searchparams)
       // .then(res => res.json())
       // .then(res => setProducts(res.data.products))
-      axios.get('https://backend-7iwt.onrender.com/api/v1/products?'+searchparams)
+      // axios.get('https://backend-7iwt.onrender.com/api/v1/products?'+searchparams)
+      axios.get('http://localhost:4000/api/v1/products?'+searchparams)
       .then(res=> {
         setProducts(res.data.products);
         setsearchparams(res.data)

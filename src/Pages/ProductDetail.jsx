@@ -10,7 +10,7 @@ export default function ProductDetail({ cartitems, setcartitems }) {
     const { id } = useParams();
 
     useEffect(() => {
-        axios.get('https://backend-7iwt.onrender.com/api/v1/product/' + id)
+        axios.get('http://localhost:4000/api/v1/product/' + id)
             .then(res => {
                 setproduct(res.data.product);
             })
