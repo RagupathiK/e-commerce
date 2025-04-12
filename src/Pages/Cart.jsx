@@ -22,7 +22,7 @@ export default function Cart({ cartitems, setcartitems }) {
     function Decreaseqty(item) {
         if (item.qty > 1) {
             const updateditems = cartitems.map((i) => {
-                if (i.product._id === item.product._id) {
+                if (i.product._id == item.product._id) {
                     i.qty--
                 }
                 return i;

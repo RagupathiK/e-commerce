@@ -26,7 +26,7 @@ export default function ProductDetail({ cartitems, setcartitems }) {
     }
 
     function Increaseqty() {
-        if (product.stock === qty) {
+        if (product.stock == qty) {
             return;
         }
         setqty((state) => state + 1)
