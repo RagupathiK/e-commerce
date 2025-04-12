@@ -7,11 +7,11 @@ export default function Cart({ cartitems, setcartitems }) {
     const [complete, setcomplete] = useState(false);
 
     function Increaseqty(item) {
-        if (item.product.stock === item.qty) {
+        if (item.product.stock == item.qty) {
             return;
         }
         const updateditems = cartitems.map((i) => {
-            if (i.product._id === item.product._id) {
+            if (i.product._id == item.product._id) {
                 i.qty++
             }
             return i;

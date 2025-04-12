@@ -17,7 +17,7 @@ export default function ProductDetail({ cartitems, setcartitems }) {
     }, [id])
 
     function addtocart() {
-        const itemexist = cartitems.find((item) => item.product._id === product._id)
+        const itemexist = cartitems.find((item) => item.product._id == product._id)
         if (!itemexist) {
             const newitem = { product, qty };
             setcartitems((state) => [...state, newitem]);

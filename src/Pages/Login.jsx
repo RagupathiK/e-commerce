@@ -16,7 +16,7 @@ export default function Login() {
         console.log("Error" + err)
       })
 
-      const users = data.find((i)=>i.UserName === username && i.PassWord === password )
+      const users = data.find((i)=>i.UserName == username && i.PassWord == password )
 
       if (users) {
         
